@@ -1,19 +1,19 @@
 <h1 align="center">
-  ADHERENT: Learning Human-Like Trajectory Generators for Whole-Body Control of Humanoid Robots
+  ADHERENT: Learning Human-like Trajectory Generators for Whole-body Control of Humanoid Robots
 </h1>
 
 
 <div align="center">
 
 
-P. M. Viceconte, R. Camoriano, G. Romualdi, D. Ferigo, S. Dafarra, S. Traversaro, G. Oriolo, L. Rosasco and D. Pucci, "ADHERENT: Learning Human-Like Trajectory Generators for Whole-Body Control of Humanoid Robots" in
+P. M. Viceconte, R. Camoriano, G. Romualdi, D. Ferigo, S. Dafarra, S. Traversaro, G. Oriolo, L. Rosasco and D. Pucci, "ADHERENT: Learning Human-like Trajectory Generators for Whole-body Control of Humanoid Robots" in
 IEEE Robotics and Automation Letters, 2022, doi: 10.1109/LRA.2022.3141658
 
 </div>
 
 <p align="center">
 
-https://user-images.githubusercontent.com/41757826/149666250-c801ac5d-bffa-41fa-9471-4b32e4945da8.mp4
+https://user-images.githubusercontent.com/41757826/149669055-96e51b57-5c26-4941-ab43-5699a28b987d.mp4
 
 </p>
 
