@@ -36,7 +36,7 @@ preferred-citation:
   month:
   start: # First page number
   end: # Last page number
-  title: "ADHERENT: Learning Human-Like Trajectory Generators for Whole-Body Control of Humanoid Robots"
+  title: "ADHERENT: Learning Human-like Trajectory Generators for Whole-body Control of Humanoid Robots"
   issue:
   volume:
   year: 2022
