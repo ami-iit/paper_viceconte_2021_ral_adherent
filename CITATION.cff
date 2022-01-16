@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this material, please cite it as below."
+url: "https://github.com/ami-iit/paper_viceconte_2021_ral_adherent"
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Viceconte"
+    given-names: "Paolo Maria"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Camoriano"
+    given-names: "Raffaello"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Romualdi"
+    given-names: "Giulio"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Ferigo"
+    given-names: "Diego"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Dafarra"
+    given-names: "Stefano"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Traversaro"
+    given-names: "Silvio"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Oriolo"
+    given-names: "Giuseppe"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Rosasco"
+    given-names: "Lorenzo"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Pucci"
+    given-names: "Daniele"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+  doi: "10.1109/LRA.2022.3141658"
+  journal: "IEEE Robotics and Automation Letters"
+  month:
+  start: # First page number
+  end: # Last page number
+  title: "ADHERENT: Learning Human-Like Trajectory Generators for Whole-Body Control of Humanoid Robots"
+  issue:
+  volume:
+  year: 2022
