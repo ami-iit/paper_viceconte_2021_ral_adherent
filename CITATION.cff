@@ -33,10 +33,10 @@ preferred-citation:
     orcid: "https://orcid.org/0000-0000-0000-0000"
   doi: "10.1109/LRA.2022.3141658"
   journal: "IEEE Robotics and Automation Letters"
-  month:
-  start: # First page number
-  end: # Last page number
+  month: 4
+  start: 2779 # First page number
+  end: 2786 # Last page number
   title: "ADHERENT: Learning Human-like Trajectory Generators for Whole-body Control of Humanoid Robots"
-  issue:
-  volume:
+  issue: 2
+  volume: 7
   year: 2022
