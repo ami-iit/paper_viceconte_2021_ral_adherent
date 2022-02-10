@@ -41,9 +41,9 @@ If you find the work useful, please consider citing:
   journal={IEEE Robotics and Automation Letters},
   title={ADHERENT: Learning Human-like Trajectory Generators for Whole-body Control of Humanoid Robots},
   year={2022},
-  volume={},
-  number={},
-  pages={},
+  volume={7},
+  number={2},
+  pages={2779-2886},
   doi={10.1109/LRA.2022.3141658}}
 ```
 
