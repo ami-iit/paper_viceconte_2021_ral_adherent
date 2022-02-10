@@ -6,8 +6,7 @@
 <div align="center">
 
 
-P. M. Viceconte, R. Camoriano, G. Romualdi, D. Ferigo, S. Dafarra, S. Traversaro, G. Oriolo, L. Rosasco and D. Pucci, "ADHERENT: Learning Human-like Trajectory Generators for Whole-body Control of Humanoid Robots" in
-IEEE Robotics and Automation Letters, 2022, doi: 10.1109/LRA.2022.3141658
+P. M. Viceconte, R. Camoriano, G. Romualdi, D. Ferigo, S. Dafarra, S. Traversaro, G. Oriolo, L. Rosasco and D. Pucci, "ADHERENT: Learning Human-like Trajectory Generators for Whole-body Control of Humanoid Robots" in IEEE Robotics and Automation Letters, vol. 7, no. 2, pp. 2779-2886, April 2022, doi: 10.1109/LRA.2022.3141658
 
 </div>
 
