@@ -1,0 +1,19 @@
+services:
+  adherent:
+    command: bash
+    container_name: adherent
+    devices:
+    - /dev/input/js0:/dev/input/js0
+    - /dev/dri
+    dns:
+    - 8.8.8.8
+    environment:
+    - DISPLAY
+    image: adherent
+    init: true
+    network_mode: host
+    runtime: runc
+    security_opt:
+    - apparmor:unconfined
+    stdin_open: true
+    tty: true

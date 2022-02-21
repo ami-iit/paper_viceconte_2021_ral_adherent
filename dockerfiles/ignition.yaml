@@ -1,0 +1,63 @@
+repositories:
+  ign-cmake:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-cmake
+    version: aac33b32561e8ea4742bb9269bf4059e9660f48f
+  ign-common:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-common
+    version: abfecc8a262b32e3df7495f11b04fd38f5594f68
+  ign-fuel-tools:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-fuel-tools
+    version: 47fe8ab57fd13397642ee0c780ac3c59aba41494
+  ign-gazebo:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-gazebo
+    version: deddb6f8f192422ed007588cc48df840556345c8
+  ign-gui:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-gui
+    version: 56bb6b3fac106e898a64d0461466958c6170a2ec
+  ign-launch:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-launch
+    version: addadb8d808a52be6cee76e4f92b14a8fecd0666
+  ign-math:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-math
+    version: 7faac0563649c155d416365b1928431a4707726e
+  ign-msgs:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-msgs
+    version: 185d467753c4239705457bea849f71a9b934a30d
+  ign-physics:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-physics
+    version: 56a04fe204afa77e6a16d84b27ec289823eb330a
+  ign-plugin:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-plugin
+    version: a80598bda4357a0bfe47a459bc03f182f5b77d7e
+  ign-rendering:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-rendering
+    version: 8252ce469f5e69d7894579deafaa194e8f0661f4
+  ign-sensors:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-sensors
+    version: b60c815e902685f1d463e278466f22890ebda4e2
+  ign-tools:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-tools
+    version: 6a9bcc8b91d052f5043e13dfb46b1b8d1bc892c4
+  ign-transport:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-transport
+    version: 58469d32e7cccbc465780c06b1f6e58b383f5ae2
+  sdformat:
+    type: git
+    url: https://github.com/osrf/sdformat
+    version: 667b6782e16d29f38935f06f4d88b1cd22e38f83
+
+
