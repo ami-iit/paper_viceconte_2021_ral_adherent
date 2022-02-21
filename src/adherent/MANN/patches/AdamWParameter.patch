@@ -1,0 +1,16 @@
+@@ -1,5 +1,8 @@
++# Use tf version 2.3.0 as 1.x
++import tensorflow.compat.v1 as tf
++tf.disable_v2_behavior()
++
+ import numpy as np
+-import tensorflow as tf
+ 
+ tf.set_random_seed(23456)  # reproducibility
+ 
+@@ -57,4 +60,3 @@
+                
+                
+                
+-               
+\ No newline at end of file
