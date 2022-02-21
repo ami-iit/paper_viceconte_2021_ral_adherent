@@ -28,7 +28,7 @@ https://user-images.githubusercontent.com/41757826/149669055-96e51b57-5c26-4941-
 
 ### Installation
 
-Our software implementation is in the process of being released.
+In order to reproduce the results related to this work, please configure your setup by following the [ADHERENT setup configuration wiki](https://github.com/ami-iit/paper_viceconte_2021_ral_adherent/wiki/ADHERENT-setup-configuration) and then follow one or more sections from the [ADHERENT scripts execution wiki](https://github.com/ami-iit/paper_viceconte_2021_ral_adherent/wiki/ADHERENT-scripts-execution).
 
 ### Citing this work
 
