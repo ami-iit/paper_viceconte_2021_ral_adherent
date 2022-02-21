@@ -9,7 +9,7 @@ services:
     - 8.8.8.8
     environment:
     - DISPLAY
-    image: adherent
+    image: ghcr.io/ami-iit/adherent-docker:latest
     init: true
     network_mode: host
     runtime: runc
