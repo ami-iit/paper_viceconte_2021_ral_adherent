@@ -3,3 +3,187 @@ This folder is intended to contain the dataset available at:
     https://zenodo.org/record/6201915#.YhOT_Bso-8g
 
 Please download the zipped dataset, extract it and replace this folder with the extracted "datasets" folder.
+
+If you do so, your dataset will contain the following content.
+
+=======
+SUMMARY
+=======
+
+The dataset is organized in folders, whose content can be summarized as follows:
+- mocap: motion capture data collected from human motion
+- retargeted_mocap:	motion capture data retargeted on the robot
+- IO_features: input and output features extracted from the retargeted mocap data to train the trajectory generator
+- training_D2_D3_subsampled_mirrored_4ew_98%: training data
+- inference: data collected while generating trajectories
+- trajectory_control_simulation: data collected while controlling trajectories in simulation
+- trajectory_control_real_robot: data collected while controlling trajectories on the real robot
+- additional_figures: additional data to reproduce some figures in the paper and portions of the supplementary video
+
+
+================
+DETAILED CONTENT
+================
+
+-------------------------------------------------------------------------------------------------------------
+mocap
+-------------------------------------------------------------------------------------------------------------
+
+This folder contains motion capture data collected from human motion.
+
+Two motion capture datasets are inlcuded: D2 and D3.
+
+Each dataset is composed of several portions.
+
+Each portion has a dedicated folder with a "data.log" file containing the correspondent motion capture data
+in a custom wearable format (see https://github.com/robotology/wearables).
+
+An additional "treadmill_walking.txt" file is included, containing a shorter sequence of mocap data for a
+walking performed on a treadmill.
+
+-------------------------------------------------------------------------------------------------------------
+retargeted_mocap
+-------------------------------------------------------------------------------------------------------------
+
+This folder contains the motion capture data retargeted on the robot.
+
+For each portion of each dataset, the correspondent retargeted mocap data are contained in a file named
+"<dataset>/<portion>_RETARGETED.txt".
+
+Another file named "<dataset>_mirrored/<portion>_RETARGETED_MIRRORED.txt" collects the mirrored retargeted
+mocap data associated to each portion of each dataset.
+
+All the retargeted mocap data are stored in json format.
+
+These data can be visualized using the "play_retargeted_mocap.py" script with the proper --dataset, --portion
+and --mirrored arguments.
+
+-------------------------------------------------------------------------------------------------------------
+IO_features
+-------------------------------------------------------------------------------------------------------------
+
+This folder contains input and output features used to train the trajectory generator.
+
+The input features extracted from each portion of each dataset are stored in a file named
+"inputs_subsampled_<dataset>/<portion>_X.txt".
+
+The output features extracted from each portion of each dataset are stored in a file named
+"outputs_subsampled_<dataset>/<portion>_Y.txt".
+
+The input features extracted from each mirrored portion of each dataset are stored in a file named
+"inputs_subsampled_mirrored_<dataset>/<portion>_X_MIRRORED.txt".
+
+The output features extracted from each mirrored portion of each dataset are stored in a file named
+"outputs_subsampled_mirrored_<dataset>/<portion>_Y_MIRRORED.txt".
+
+All the features are stored in json format.
+
+-------------------------------------------------------------------------------------------------------------
+training_D2_D3_subsampled_mirrored_4ew_98%
+-------------------------------------------------------------------------------------------------------------
+
+This folder includes data related to training.
+
+The /model folder includes the tf checkpoint to restore the trained model.
+
+The /normalization folder includes the full training and test input X and output Y along with the input and
+output mean and standard deviation.
+
+The /nn folder includes the last neural network weights.
+
+The /weights folder includes the neural network weights periodically saved (every 10 epochs) during training.
+
+The /logs folder includes the tensorboard logs.
+
+-------------------------------------------------------------------------------------------------------------
+inference
+-------------------------------------------------------------------------------------------------------------
+
+This folder contains trajectory generation data for a wide variety of trajectories.
+
+Each generated trajectory is characterized by the following data (all in json format):
+- generated footsteps in the "footsteps.txt" file
+- joystick inputs interactively shaping the trajectory generation in the "joystick_input.txt" file
+- generated base and joint posturals in the "postural.txt" file
+- blending coefficients activations associated to the generated trajectory in the "blending_coefficients.txt"
+  file (if available)
+
+The /fig_6_adherent_generated folder contains trajectory generation data for a forward walking used to
+produce Fig.6 in the paper.
+
+The /fig_8_blending_coefficients folder contains trajectory generation data for a mixed walking sequence used
+to produce Fig.8 in the paper.
+
+The /supplementary_video_simulations folder contains trajectory generation data for four walking sequences
+whose simulations are shown from 02:11 to 02:29 in the supplementary video.
+
+The /experiments folder contains trajectory generation data for a variety of walking trajectories used
+for the simulations and experiments described in the paper and shown in the supplementary video.
+
+These data can be visualized using the "play_generated_trajectory.py" script with the proper --storage_path
+argument.
+
+-------------------------------------------------------------------------------------------------------------
+trajectory_control_simulation
+-------------------------------------------------------------------------------------------------------------
+
+This folder contains data collected while controlling trajectories in simulation.
+
+The data collected for each simulation are stored in a dedicated folder, all in the "data.txt" file, in json
+format.
+
+In particular, this folder contains the data of the simulations shown from 02:11 to 02:29 in the
+supplementary video (folders starting with "video"):
+- backward S-shape walking
+- walking through a narrow passage
+- square walking trajectory
+- mixed walking trajectory
+
+This folder also contains the data related to the successful simulations represented by the green areas in
+in Fig.5 (folders starting with "fig5"). The footsteps scaling factor (cf) and the velocity scaling factor
+(cv) in the folder name define the correspondent simulation in Fig.5.
+
+These data can be visualized with the "plot_trajectory_control_data.py" script with the proper --data_path
+argument.
+
+-------------------------------------------------------------------------------------------------------------
+trajectory_control_real_robot
+-------------------------------------------------------------------------------------------------------------
+
+This folder contains data collected while controlling trajectories on the real robot.
+
+The data collected for each experiment are stored in a dedicated folder, all in the "data.txt" file, in json
+format.
+
+In particular, this folder contains the data of the experiments shown in the supplementary video (folders
+starting with "video"):
+- backward walking from 03:00 to 03:12 in the video
+- left-side and then right-side walking from 03:12 to 03:37 in the video
+- forward walking with ADHERENT postural from 03:38 to 03:54 in the video
+- forward walking with fixed postural from 03:38 to 03:54 in the video
+- mixed walking sequence from 03:55 to 04:57 in the video
+
+This folder also contains the data related to some of the most challenging successful experiments on the real
+robot representend by the green lines in Fig.5 (folders starting with "fig5"). The footsteps scaling factor
+(cf) and the velocity scaling factor (cv) in the folder name define the correspondent experiment in Fig.5.
+
+These data can be visualized with the "plot_trajectory_control_data.py" script with the proper --data_path
+argument.
+
+-------------------------------------------------------------------------------------------------------------
+additional_figures
+-------------------------------------------------------------------------------------------------------------
+
+This folder contains data to reproduce Fig.7 in the paper:
+- the "fig_7_adherent_postural.txt" file contains trajectory control data obtained using ADHERENT postural
+- the "fig_7_fixed_postural.txt" file contains trajectory control data obtained using fixed postural
+
+These data can be visualized with the "plot_Fig_7.py" script.
+
+This folder also contains data to reproduce the comparison between Whole-Body Geometric Retargeting (WBGR)
+and Kinematically-Feasible Whole-Body Geometric Retargeting (KFWBGR) shown from 00:47 to 00:57 in the
+supplementary video:
+- the "supplementary_video_WBGR.txt" file includes retargeted mocap data obtained using WBGR
+- the "supplementary_video_KFWBGR.txt" file includes retargeted mocap data obtained using KFWBGR
+
+This comparison can be visualized with the "play_retargeted_mocap_WBGR_vs_KFWBGR.py" script.
