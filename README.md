@@ -12,7 +12,11 @@ P. M. Viceconte, R. Camoriano, G. Romualdi, D. Ferigo, S. Dafarra, S. Traversaro
 
 <p align="center">
 
-https://user-images.githubusercontent.com/41757826/149669055-96e51b57-5c26-4941-ab43-5699a28b987d.mp4
+  
+
+
+https://user-images.githubusercontent.com/41757826/155517805-78af9add-66bb-47fc-bd57-038146f07a4e.mp4
+
 
 </p>
 
@@ -23,7 +27,7 @@ https://user-images.githubusercontent.com/41757826/149669055-96e51b57-5c26-4941-
 <div align="center">
   <a href="#installation"><b>Installation</b></a> |
   <a href="https://ieeexplore.ieee.org/document/9676410"><b>Paper</b></a> |
-  <a href=""><b>Video</b></a>
+  <a href="https://www.youtube.com/watch?v=s7-pML0ojK8"><b>Video</b></a>
 </div>
 
 ### Installation
